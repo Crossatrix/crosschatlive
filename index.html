@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cross Chat Viewer</title>
+    <style>
+        /* Entfernt Standard-Ränder des Browsers */
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden; /* Verhindert doppeltes Scrollen */
+            background-color: #000; /* Optional: Schwarzer Hintergrund während des Ladens */
+        }
+
+        /* Lässt das I-Frame den kompletten Bildschirm ausfüllen */
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none; /* Entfernt den Standard-Rahmen */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hier wird Cross Chat eingebettet -->
+    <iframe src="https://cross-a-chat.lovable.app" allow="geolocation; microphone; camera"></iframe>
+
+</body>
+</html>
