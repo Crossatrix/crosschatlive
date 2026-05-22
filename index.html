@@ -1,75 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Opening Cross Chat...</title>
-    
-    <meta http-equiv="refresh" content="3; url=https://cross-a-chat.lovable.app">
-    
-    <style>
-        /* CSS-Reset und Hintergrundgestaltung */
-        html, body {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            height: 100%;
-            background-color: hsl(220, 80%, 12%); /* Dunkelblauer Hintergrund */
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            overflow: hidden;
-        }
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+ <title>Cross-a-chat</title>
+ <style>
+ /* Zwingt die Hauptseite, exakt so groß wie das Display zu sein */
+ html, body {
+ margin: 0;
+ padding: 0;
+ width: 100vw;
+ height: 100vh;
+ overflow: hidden;
+ background-color: hsl(220, 80%, 12%);
+ }
 
-        /* Container für die Elemente */
-        .container {
-            text-align: center;
-            padding: 20px;
-        }
-
-        /* Der gelbe Text */
-        h1 {
-            color: hsl(45, 100%, 55%); /* Gelber Text */
-            font-size: 24px;
-            font-weight: 500;
-            margin-bottom: 30px;
-            letter-spacing: 0.5px;
-        }
-
-        /* Der gelbe Button mit weißem Text */
-        .btn-direct {
-            display: inline-block;
-            background-color: hsl(45, 100%, 55%); /* Gelber Button-Hintergrund */
-            color: #ffffff; /* Weißer Text */
-            text-decoration: none;
-            padding: 12px 24px;
-            font-size: 16px;
-            font-weight: bold;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-            transition: transform 0.1s ease, background-color 0.2s ease;
-        }
-
-        /* Kleiner Effekt beim Drücken des Buttons */
-        .btn-direct:active {
-            transform: scale(0.98);
-            background-color: hsl(45, 100%, 50%);
-        }
-    </style>
+ /* Setzt den IFrame absolut über das gesamte Display */
+ iframe {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100vw;
+ height: 100vh;
+ border: none;
+ margin: 0;
+ padding: 0;
+ }
+ </style>
 </head>
 <body>
-
-    <div class="container">
-        <h1>opening Cross Chat…</h1>
-        
-        <a href="https://cross-a-chat.lovable.app" class="btn-direct">Open now</a>
-    </div>
-
-    <script>
-        setTimeout(function() {
-            window.location.href = "https://cross-a-chat.lovable.app";
-        }, 3000);
-    </script>
+ <iframe src="https://cross-a-chat.lovable.app" 
+ title="Cross-a-chat"
+ allow="camera; microphone; fullscreen">
+ </iframe>
 </body>
 </html>
